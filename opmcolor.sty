@@ -1,0 +1,28 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{opmcolor}[2021/03/04]
+
+\RequirePackage{xcolor}
+
+% Main colour
+\definecolor{opmblue}{RGB}{81, 0, 100}
+
+% "Warm grey"
+\definecolor{opmgrey}{RGB/cmyk}{235,235,230/0,0,0,.1}
+\colorlet{opmgray}{opmgrey}
+
+% Greens
+\definecolorset{RGB}{opm}{}{lightgreen, 27, 197, 50;%
+                                    green,       27, 119, 50;%
+                                    darkgreen,    27, 67, 50}
+
+% Additional colours
+\definecolorset{RGB}{opm}{}{yellow, 225, 145, 1;%
+                                    red,    190, 60,55/19, 86,77, 8;%
+                                    lilla,  81, 0, 100}
+
+% Deprecated colours for backward compatibility
+\definecolorset{HTML}{opm}{}{cyan,      22A7E5;%
+                                magenta,   EC008C;%
+                                lightgrey, D8D0C7}
+\colorlet{opmlightgray}{opmlightgrey}
+
